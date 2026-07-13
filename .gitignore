@@ -1,0 +1,15 @@
+# ملفات النود
+node_modules/
+npm-debug.log
+
+# ملفات تيرفورم
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# ملفات البايثون
+__pycache__/
+*.pyc
+
+# ملفات النظام
+.DS_Store
