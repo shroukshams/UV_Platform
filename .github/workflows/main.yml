@@ -12,6 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.5.0 # يمكنك تغيير الإصدار حسب الحاجة
+
       - name: Build Docker Images
         run: |
           docker build -t vu-ai-service ./services/ai-service
